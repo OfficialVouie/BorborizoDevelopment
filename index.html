@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Borborizo Development - Game Studio">
   <title>Borborizo Development - Under Construction</title>
+  <link rel="icon" type="image/x-icon" href="Images/CompanyIcon.png">
   <style>
-    /* Reset styles */
     * {
       margin: 0;
       padding: 0;
@@ -14,9 +14,9 @@
     }
 
     body {
-      font-family: 'Arial', sans-serif;
       background-color: #101010;
       color: white;
+      font-family: 'Arial', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -26,9 +26,19 @@
       overflow: hidden;
     }
 
+    header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+    }
+
     h1 {
       font-size: 3.5rem;
-      font-weight: 700;
       color: #f39c12;
       margin-bottom: 15px;
       text-transform: uppercase;
@@ -53,7 +63,7 @@
     }
 
     .progress {
-      width: 50%; /* Simulate progress */
+      width: 50%;
       height: 100%;
       background-color: #f39c12;
       border-radius: 5px;
@@ -71,38 +81,30 @@
     footer a {
       color: #f39c12;
       text-decoration: none;
+      font-weight: 500;
     }
 
     footer a:hover {
       text-decoration: underline;
     }
 
-    /* Keyframes */
     @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes progressBar {
-      0% {
-        width: 50%;
-      }
-      50% {
-        width: 75%;
-      }
-      100% {
-        width: 50%;
-      }
+      0% { width: 50%; }
+      50% { width: 75%; }
+      100% { width: 50%; }
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <img src="Images/CompanyLogo.png" alt="Borborizo Development Logo">
+  </header>
 
   <h1>Borborizo Development</h1>
   <p>Our website is under construction. Please check back later!</p>
@@ -112,8 +114,7 @@
   </div>
 
   <footer>
-    <p>&copy; 2025 Borborizo Development. All rights reserved.</p>
-    <p>Join us on <a href="https://discord.gg/gmb4dnVkRX" target="_blank">Discord</a> for updates.</p>
+    <p>Join our <a href="https://discord.gg/yourserverlink" target="_blank">Discord</a></p>
   </footer>
 
 </body>
