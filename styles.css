@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar .logo img {
+  width: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hero {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+/* Videos Section */
+.videos {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+.videos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-card iframe {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .social-links {
+  margin-top: 15px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  font-size: 20px;
+}
