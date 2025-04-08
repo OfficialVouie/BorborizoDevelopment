@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('Images/Background.png') no-repeat center center/cover;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form-box {
+    width: 400px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.inputbox label {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label {
+    top: -10px;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.terms {
+    margin: 25px 0;
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.terms a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #4fc3f7;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #29b6f6;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.register-link a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+.terms-link {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.terms-link a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+.welcome-text {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.under-text {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.6em;
+}
+
+.under-text-small {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Loader Animation */
+.loader {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
